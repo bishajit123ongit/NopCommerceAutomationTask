@@ -12,8 +12,6 @@ public class PlaceOrderPage extends BaseTest {
     @FindBy(xpath = "//div[@class='header-menu']//child::a[@href='/cell-phones']")
     WebElement elCellPhones;
 
-
-
     public PlaceOrderPage(){
         PageFactory.initElements(driver,this);
     }

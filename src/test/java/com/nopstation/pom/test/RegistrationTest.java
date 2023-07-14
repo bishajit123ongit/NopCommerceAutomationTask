@@ -3,6 +3,9 @@ package com.nopstation.pom.test;
 import com.nopstation.pom.BaseTest;
 import com.nopstation.pom.pages.HomePage;
 import com.nopstation.pom.pages.RegisterPage;
+import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,12 +16,17 @@ public class RegistrationTest extends BaseTest {
         super();
     }
 
+    @Feature("Home page verification")
+    @Description("Lunch and then verify the homepage appear properly")
     @Test(priority = 0)
     public void verifyHomePageShouldSucceed(){
         HomePage homePage = new HomePage();
         Assert.assertTrue(homePage.isHomePageDisplay());
     }
 
+    @Feature("Go to the registration page")
+    @Story("Registration link")
+    @Description("From the home page click to the registration link")
     @Test(priority = 1)
     public void clickRegisterButtonShouldSucceed(){
           registerPage = new HomePage()
@@ -26,6 +34,9 @@ public class RegistrationTest extends BaseTest {
         Assert.assertTrue(registerPage.isRegisterButtonDisplay());
     }
 
+    @Feature("Filling the registration form")
+    @Story("Filling the registration form")
+    @Description("Filling the all essential field for registration")
     @Test(priority = 2)
     public void registrationShouldSucceed() throws Exception {
         splitDayMonthYearFormDate(arrayList.get("Register").get(0).get("DateOfBirth"));

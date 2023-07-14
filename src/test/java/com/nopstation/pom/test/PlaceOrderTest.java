@@ -2,6 +2,8 @@ package com.nopstation.pom.test;
 
 import com.nopstation.pom.BaseTest;
 import com.nopstation.pom.pages.*;
+import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -20,12 +22,16 @@ public class PlaceOrderTest extends BaseTest {
         super();
     }
 
+    @Feature("Home page verification")
+    @Description("Lunch and then verify the homepage appear properly")
     @Test(priority = 0)
     public void verifyHomePageShouldSucceed(){
         HomePage homePage = new HomePage();
         Assert.assertTrue(homePage.isHomePageDisplay());
     }
 
+    @Feature("Goto the cellphone page")
+    @Description("Hover on the electronics option then click the cellphone")
     @Test(priority = 1)
     public void clickElectronicsCellPhoneShouldSucceed() throws InterruptedException {
         placeOrderPage = new HomePage()
@@ -34,6 +40,8 @@ public class PlaceOrderTest extends BaseTest {
         Assert.assertTrue(new CellPhoneAddCartPage().verifyNokiaLumia());
     }
 
+    @Feature("Click the nokia lumia phone")
+    @Description("Click the phone for add cart")
     @Test(priority = 2)
     public void clickNokiaLumiaShouldSucceed() throws InterruptedException {
         cellPhoneAddCartPage = new CellPhoneAddCartPage()
@@ -41,11 +49,15 @@ public class PlaceOrderTest extends BaseTest {
         Assert.assertTrue(cellPhoneAddCartPage.verifyNokiaLumia());
     }
 
+    @Feature("Verify the add cart page quantity field")
+    @Description("Verify the add cart page quantity field")
     @Test(priority = 3)
     public void verifyQuantity(){
         Assert.assertTrue(cellPhoneAddCartPage.verifyProductQuantity());
     }
 
+    @Feature("Set the quantity")
+    @Description("Set the value of quantity and click the add cart button")
     @Test(priority = 4)
     public void clickAddCartShouldSucceed() throws Exception {
         cellPhoneAddCartPage = cellPhoneAddCartPage
@@ -53,6 +65,8 @@ public class PlaceOrderTest extends BaseTest {
                 .clickAddCart();
     }
 
+    @Feature("Set the quantity")
+    @Description("Set the value of quantity and click the add cart button")
     @Test(priority = 5)
     public void clickShoppingCartShouldSucceed() throws Exception {
         cellPhoneAddCartPage = new CellPhoneAddCartPage();
@@ -61,6 +75,8 @@ public class PlaceOrderTest extends BaseTest {
         Assert.assertTrue(shoppingCartPage.verifyShoppingCartPageTitle());
     }
 
+    @Feature("Click Terms and condition")
+    @Description("Click the terms and condition then click continue button")
     @Test(priority = 6)
     public void clickCheckoutButtonShouldSucceed() throws Exception {
         shoppingCartPage = new ShoppingCartPage();
@@ -69,6 +85,8 @@ public class PlaceOrderTest extends BaseTest {
                 .clickCheckoutButton();
     }
 
+    @Feature("Login as a guest user")
+    @Description("Checkout guest button for login as a guest user")
     @Test(priority = 7)
     public void clickCheckoutAsGuestShouldSucceed() throws Exception {
         guestPage = new GuestPage();
@@ -77,6 +95,8 @@ public class PlaceOrderTest extends BaseTest {
         Assert.assertTrue(billingPage.verifyBillingPageTitle());
     }
 
+    @Feature("Fill the billing form")
+    @Description("Set all essential data in the billing page")
     @Test(priority = 8)
     public void createBillingDetailsShouldSucceed() throws Exception {
         billingPage = new BillingPage();
@@ -96,6 +116,8 @@ public class PlaceOrderTest extends BaseTest {
         Assert.assertTrue(shippingAndPaymentMethodPage.verifyShippingMethodOption());
     }
 
+    @Feature("Click next day air and credit card")
+    @Description("Click next day air, credit card and continue")
     @Test(priority = 9)
     public void selectShippingAndPaymentMethodShouldSucceed() throws Exception {
         shippingAndPaymentMethodPage = new ShippingAndPaymentMethodPage();
@@ -105,6 +127,8 @@ public class PlaceOrderTest extends BaseTest {
         Assert.assertTrue(paymentInfoAndConfirmOrderPage.verifyPaymentInformation());
     }
 
+    @Feature("Fill card information and confirm the order")
+    @Description("Fill card information and confirm the order and verify the success order message")
     @Test(priority = 10)
     public void createPaymentAndConfirmOrderShouldSucceed() throws Exception {
         paymentInfoAndConfirmOrderPage = new PaymentInfoAndConfirmOrderPage()

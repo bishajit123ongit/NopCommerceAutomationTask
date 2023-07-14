@@ -1,6 +1,7 @@
 package com.nopstation.pom.pages;
 
 import com.nopstation.pom.BaseTest;
+import io.qameta.allure.Allure;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -26,10 +27,6 @@ public class PaymentInfoAndConfirmOrderPage extends BaseTest {
 
     @FindBy(id = "CardCode")
     WebElement elCardCode;
-
-
-
-
 
 
     public PaymentInfoAndConfirmOrderPage(){

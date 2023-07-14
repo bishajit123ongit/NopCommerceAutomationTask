@@ -69,17 +69,17 @@ public class RegisterPage extends BaseTest {
         return this;
     }
 
-    public RegisterPage fillFirstName(String fName){
+    public RegisterPage fillFirstName(String firstName){
         elFirstName.isDisplayed();
         elFirstName.clear();
-        elFirstName.sendKeys(fName);
+        elFirstName.sendKeys(firstName);
         return this;
     }
 
-    public RegisterPage fillLastName(String lName){
+    public RegisterPage fillLastName(String lastName){
         elLastName.isDisplayed();
         elLastName.clear();
-        elLastName.sendKeys(lName);
+        elLastName.sendKeys(lastName);
         return this;
     }
 
@@ -115,10 +115,10 @@ public class RegisterPage extends BaseTest {
         return this;
     }
 
-    public RegisterPage fillCompanyName(String cmpName){
+    public RegisterPage fillCompanyName(String companyName){
         elCompany.isDisplayed();
         elCompany.clear();
-        elCompany.sendKeys(cmpName);
+        elCompany.sendKeys(companyName);
         return this;
     }
 
