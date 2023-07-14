@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nopstation.pom.test.RegistrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-07-13T16:32:18" hostname="BISHAWJIT-PC" time="13.073">
+  <properties/>
+  <testcase name="verifyHomePageShouldSucceed" classname="com.nopstation.pom.test.RegistrationTest" time="0.401"/>
+  <testcase name="clickRegisterButtonShouldSucceed" classname="com.nopstation.pom.test.RegistrationTest" time="4.855"/>
+  <testcase name="registrationShouldSucceed" classname="com.nopstation.pom.test.RegistrationTest" time="7.738"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jul 13, 2023 10:31:57 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+Cleaning up unclosed ZipFile for archive C:\Users\Bishawajit\IdeaProjects\NopCommerceAutomationTask\TestRunList.xlsx
+Cleaning up unclosed ZipFile for archive C:\Users\Bishawajit\IdeaProjects\NopCommerceAutomationTask\TestRunList.xlsx
+Cleaning up unclosed ZipFile for archive C:\Users\Bishawajit\IdeaProjects\NopCommerceAutomationTask\TestRunList.xlsx
+Cleaning up unclosed ZipFile for archive C:\Users\Bishawajit\IdeaProjects\NopCommerceAutomationTask\TestRunList.xlsx
+Cleaning up unclosed ZipFile for archive C:\Users\Bishawajit\IdeaProjects\NopCommerceAutomationTask\TestRunList.xlsx
+Cleaning up unclosed ZipFile for archive C:\Users\Bishawajit\IdeaProjects\NopCommerceAutomationTask\TestRunList.xlsx
+Cleaning up unclosed ZipFile for archive C:\Users\Bishawajit\IdeaProjects\NopCommerceAutomationTask\TestRunList.xlsx
+Cleaning up unclosed ZipFile for archive C:\Users\Bishawajit\IdeaProjects\NopCommerceAutomationTask\TestRunList.xlsx
+Cleaning up unclosed ZipFile for archive C:\Users\Bishawajit\IdeaProjects\NopCommerceAutomationTask\TestRunList.xlsx
+]]></system-err>
+</testsuite>
